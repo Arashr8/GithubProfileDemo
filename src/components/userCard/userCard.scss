@@ -1,0 +1,100 @@
+@import "../../mixins";
+
+.userCard {
+  display: grid;
+  padding: 4rem;
+  grid-template-columns: 6rem 1fr;
+  gap: 2rem;
+  border-radius: 0.5rem;
+
+  @include respond(tab-land) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  @include respond(tab-port) {
+    padding : 1.5rem;
+  }
+
+  .date {
+    grid-area: date;
+    justify-self: end;
+    @include respond(tab-land) {
+      justify-self: start;
+    }
+  }
+
+  .avatar {
+    width: 100%;
+    border-radius: 50%;
+    @include respond(tab-land) {
+      display: none;
+    }
+  }
+
+  .avatar2 {
+    width: 100%;
+    border-radius: 50%;
+    display: none;
+    @include respond(tab-land) {
+      display: initial;
+    }
+  }
+
+
+  &__header {
+    display: grid;
+    grid-template-areas: "title date"
+                        "login login";
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    @include respond(tab-land) {
+      grid-template-areas: "avatar title"
+                        "avatar login "
+                        "avatar date ";
+      grid-template-columns: 5rem 1fr;
+      column-gap: 2rem;
+      grid-template-rows: repeat(3, max-content);
+    }
+  }
+
+  .counts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    margin: 2rem 0;
+
+    strong {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+
+  }
+
+  .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 1rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
+
+      p {
+      display: flex;
+      align-items: center;
+      gap: 01rem;
+
+      &.disabled {
+        opacity: 0.5;
+      }
+    }
+  }
+
+}
+
