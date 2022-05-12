@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    margin-right: auto !important;
+}
+
+header button {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.5rem !important;
+    border-radius: 0.5rem !important;
+}

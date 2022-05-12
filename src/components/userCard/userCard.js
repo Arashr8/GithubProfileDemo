@@ -4,40 +4,7 @@ import './userCard.scss';
 import {useTheme} from "../../theme";
 import moment from "moment";
 
-const sample = {
-    "login": "ethomson",
-    "id": 1130014,
-    "node_id": "MDQ6VXNlcjExMzAwMTQ=",
-    "avatar_url": "https://avatars.githubusercontent.com/u/1130014?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/ethomson",
-    "html_url": "https://github.com/ethomson",
-    "followers_url": "https://api.github.com/users/ethomson/followers",
-    "following_url": "https://api.github.com/users/ethomson/following{/other_user}",
-    "gists_url": "https://api.github.com/users/ethomson/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/ethomson/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/ethomson/subscriptions",
-    "organizations_url": "https://api.github.com/users/ethomson/orgs",
-    "repos_url": "https://api.github.com/users/ethomson/repos",
-    "events_url": "https://api.github.com/users/ethomson/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/ethomson/received_events",
-    "type": "User",
-    "site_admin": true,
-    "name": "Edward Thomson",
-    "company": "GitHub",
-    "blog": "http://www.edwardthomson.com/",
-    "location": "Cambridge, MA / Cambridge, UK",
-    "email": null,
-    "hireable": null,
-    "bio": "Product Manager at @github.  Maintainer of @libgit2.\r\n",
-    "twitter_username": "ethomson",
-    "public_repos": 155,
-    "public_gists": 34,
-    "followers": 1247,
-    "following": 1,
-    "created_at": "2011-10-15T14:05:12Z",
-    "updated_at": "2022-03-10T15:16:03Z"
-}
+
 
 const UserCard = ({data}) => {
     const {mode} = useTheme()

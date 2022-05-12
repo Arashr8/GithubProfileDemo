@@ -44,7 +44,7 @@ const UserEvents = ({data}) => {
                     return acc;
                 }, [[]]).map((column, index) => <div key={index} className="column">{column.map(item => <Tooltip
                     key={item.date}
-                    title={`${item.count} ${item.count > 1 ? "contributions" : "contribution"} ${moment(item.date, "YYYY-MM-DD").format("ll")}`}>
+                    title={`${item.count} ${item.count > 1 ? "contributions" : "contribution"} ${moment("YYYY-MM-DD").format("ll")}`}>
                     <div className="heatmap__cell" style={{backgroundColor: item.color}}/>
                 </Tooltip>)}</div>)}
             </div>

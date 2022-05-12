@@ -1,7 +1,7 @@
 import React from 'react';
 import {ButtonBase, Typography} from "@mui/material";
 import {useTheme} from "../../theme";
-import './header.css'
+import './header.scss'
 
 const Header = () => {
     const {mode, toggle} = useTheme()
